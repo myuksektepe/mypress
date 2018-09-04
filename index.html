@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="assets/plugins/highlighterjs/default.min.css" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="left">
+		<div class="content">
+			<h1>Fihrist</h1>
+			<ul class="toc-list">
+				<li>
+					<a class="active" href="#baslangic" data-id="baslangic">WAMP Server</a>
+					<ul>
+						<li><a href="#nedir" data-id="nedir">Nedir?</a></li>
+						<li><a href="#neleryapabiliriz" data-id="neleryapabiliriz">Neler Yapabiliriz?</a></li>
+						<li><a href="#kurulum" data-id="kurulum">Kurulumu</a></li>
+						<li><a href="#taniyalim" data-id="taniyalim">Tanıyalım</a></li>
+						<li><a href="#hatalarvecozumleri" data-id="hatalarvecozumleri">Kurarken Karşılaşabilecek Hatalar ve Çözümleri</a></li>
+						<li><a href="#interneteacmak" data-id="interneteacmak">İnternete Açmak (Online Hale Getirmek)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="close"><</div>
+	</div>
+	<div class="right">
+		<div class="step" data-title="baslangic">
+			<h1 class="text-big-4em" id="baslangic">WAMP Server Hakkında Her Şey</h1>
+			<ul class="toc-sub-list">
+				<li><a href="#nedir">Nedir?</a></li>
+				<li><a href="#neleryapabiliriz">Neler Yapabiliriz?</a></li>
+				<li><a href="#kurulum">Kurulumu</a></li>
+				<li><a href="#taniyalim">Tanıyalım</a></li>
+				<li><a href="#hatalarvecozumleri">Kurarken Karşılayabilecek Hatalar ve Çözümleri</a></li>
+				<li><a href="#interneteacmak">İnternete Açmak (Online Hale Getirmek)</a></li>
+			</ul>
+			Bu yazımızda WAMP Server hakkında bir şeyler anlatacağız..
+		</div>
+		<div class="divider"></div>
+
+		<div class="step" data-title="nedir">
+			<h2 class="text-big-2em" id="nedir"># WAMP Server Nedir?</h2>
+			<p>Bildiğiniz üzere PHP <a href="https://makdos.com/sunucu">sunucu </a>&nbsp;tabanlı çalışan bir programlama dilidir. Sunucu içerisinde PHP çalıştırabilmek için uygun ortamın hazırlanmış olması gerekmektedir. Bu ortamı sağlayacak hazır paket programlar bulunmaktadır. Bu makalemizde bu programlar içerisinde en çok tercih edilen WAMP Server’dan, kurulumu ve kullanımından bahsedeceğiz.</p>
+			<p style="text-align: center;"><span><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp-server.png" class="link"><img class="aligncenter size-full wp-image-544" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp-server.png" alt="" width="728" height="364"></a></span></p>
+			<p style="text-align: center;"><span><strong>WAMP Server (Windows,&nbsp;Apache,&nbsp;MySQL,&nbsp;PHP)</strong></span></p>
+			<p><span><strong>&nbsp;</strong></span></p>
+			<p><span>Windows işletim sistemine sahip sunucularda kullanılmak üzere Linux web sunucularında kullanılan&nbsp;<strong>LAMP</strong>&nbsp;paketinden türetilerek oluşturulmuştur.</span></p>
+			<p>&nbsp;</p>
+			<p><span>Başarılı bir kurum sonrası bizlere;</span></p>
+			<ul>
+			<li><span>Apache,</span></li>
+			<li><span>PHP,</span></li>
+			<li><span>MySQL (veri tabanı sunucusu) ve</span></li>
+			<li><span>PhpMyAdmin (veri tabanı yönetim ara yüzü)</span></li>
+			</ul>
+			<p>&nbsp;</p>
+			<p><span>Sistemlerini sağlar ve bunları tek yerden yönetmemize olanak tanır. Kendi web sitesi (<a href="http://www.wampserver.com/en/">http://www.wampserver.com/en/</a>) üzerinden <strong>ücretsiz</strong> olarak dağıtılmaktadır.</span></p>
+		</div>
+		<div class="divider"></div>
+
+		<div class="step" data-title="neleryapabiliriz">
+			<h2 class="text-big-2em" id="neleryapabiliriz"># WAMP Server ile Neler Yapabiliriz?</h2>
+			<p>Elinizde PHP dili kodlanmış bir web siteniz ve Windows işletim sistemine sahip bir sunucunuz varsa web sitenizi en iyi şekilde yayınlamak için WAMP Server biçilmiş kaftan.</p>
+			<p>&nbsp;</p>
+			<p><span>Ayrıca MySQL sayesinde ile veri tabanlarınızı oluşturup yönetebilirsiniz. Böylece veri saklayabilen web siteleriniz, -yazacağınız API servisleri sayesinde- mobil uygulamalarınız ya masaüstü programlarınız olabilir.</span></p>
+			<p>&nbsp;</p>
+			<p><span>Bu veri tabanlarını oluşturmak ve kullanmak için de sizlere sağlanan PhpMyAdmin ara yüzü sayesinde işleriniz olabildiğince kolaylaşmış olacaktır.</span></p>
+		</div>
+		<div class="divider"></div>
+
+		<div class="step" data-title="kurulum">
+			<h2 class="text-big-2em" id="kurulum"># WAMP Server Kurulumu</h2>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_1.png" class="link"><img class="aligncenter size-full wp-image-545" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_1.png" alt="" width="991" height="499"></a></p>
+			<p>&nbsp;</p>
+			<p>WAMP Server’ı kendi web sitesinden ücretsiz olarak indirebildiğini söylemiştik. Bunun için önce siteye giriyoruz. Download sayfasına geçtiğimizde 64bit ve 32bit olmak üzere iki seçenek çıkıyor. Sunucumuzun işletim sistemine uygun olan sürümü seçip indirmeye başlıyoruz.</p>
+			<p>&nbsp;</p>
+			<table>
+			<tbody>
+			<tr>
+			<td width="301"><strong>WAMP Server 64bit’in Sundukları</strong></td>
+			<td width="301"><strong>WAMP Server 32bit’in Sundukları</strong></td>
+			</tr>
+			<tr>
+			<td width="301">
+			<p>– Wampserver 3.1.0 64 bit x64</p>
+			<p>– Apache 2.4.27</p>
+			<p>– PHP 5.6.31, 7.0.23, 7.1.9</p>
+			<p>– MySQL 5.7.19</p>
+			<p>– MariaDB 10.2.8</p>
+			<p>– PhpMyAdmin 4.7.4</p>
+			<p>– Adminer 4.3.1</p>
+			<p>– PhpSysInfo 3.2.7</p>
+			</td>
+			<td width="301">
+			<p>– Wampserver 3.1.0 32 bit x86</p>
+			<p>– Apache 2.4.27</p>
+			<p>– PHP 5.6.31, 7.0.23, 7.1.9</p>
+			<p>– MySQL 5.7.19</p>
+			<p>– MariaDB 10.2.8</p>
+			<p>– PhpMyAdmin 4.7.4</p>
+			<p>– Adminer 4.3.1</p>
+			<p>– PhpSysInfo 3.2.7</p>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+			<p>Not: Bu veriler Ocak, 2018 yılı itibariyle alınmıştır.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>Kurulum aşamasında klasik kurulum ekranlarını “İleri” butonu ile geçiyoruz.</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_2.png" class="link"><img class="aligncenter size-full wp-image-546" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_2.png" alt="" width="499" height="386"></a></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_3.png" class="link"><img class="aligncenter size-full wp-image-547" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_3.png" alt="" width="498" height="387"></a></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_4.png" class="link"><img class="aligncenter size-full wp-image-548" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_4.png" alt="" width="498" height="388"></a></p>
+			<p>Kurulumun yapılacağı dizini seçiyoruz. Genelde burada yazılı olan dizini değiştirmenize gerek kalmaz. Ancak bazı durumlarda yedek diskiniz olan E sürücüsünü seçmek isteyebilirsiniz.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_5.png" class="link"><img class="aligncenter size-full wp-image-549" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_5.png" alt="" width="501" height="390"></a></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_6.png" class="link"><img class="aligncenter size-full wp-image-550" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_6.png" alt="" width="498" height="385"></a></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_7.png" class="link"><img class="aligncenter size-full wp-image-551" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_7.png" alt="" width="498" height="386"></a></p>
+			<p>Kurulumun sonuna doğru karşınıza birkaç soru penceresi çıkacaktır. Bu ilk pencerede size Internet Explorer’dan başka kullanmak istediğiniz web tarayıcısı olup olmadığını soruyor. <strong>Google Chrome yada Mozilla Firefox gibi bir tarayıcı birincil olarak seçmek için “Evet” butonuna tıklayın ve dosya yolunu belirtin.</strong></p>
+			<p>&nbsp;</p>
+			<p><strong>&nbsp;</strong></p>
+			<p><strong>&nbsp;<a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_8.png" class="link"><img class="aligncenter size-full wp-image-552" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_8.png" alt="" width="500" height="391"></a></strong></p>
+			<p><strong>&nbsp;</strong></p>
+			<p>Sonraki soru penceresinde ise kodlama yaparken kullanacağınız editör programını Windows’un kendi Not Defteri uygulaması dışında başka bir program olarak seçip seçmeyeceğinizi soruyor. <strong>Sublime Text, Atom, Visual Studio Code vb. gibi bir IDE seçmek için bu seçeneğe de “Evet” deyip dosya yolunu belirtiyoruz.</strong></p>
+			<p>&nbsp;</p>
+			<p><strong>&nbsp;</strong></p>
+			<p>Birkaç kere daha İleri seçeneği tıkladıktan sonra “Bitir“ diyoruz ve WAMP Server başarıyla kurulmuş oluyor.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>Çalışıp çalışmadığını test etmek için web tarayıcımızın adres çubuğuna <a href="http://localhost">http://localhost</a> yazabiliriz. Her şey yolunda gittiyse karşımıza açılacak olan sayfanın alttaki gibi bir görüntüye sahip olması gerekiyor.</p>
+			<p>&nbsp;</p>
+			<p><strong>&nbsp;<a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_9.png" class="link"><img class="img_block" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kurulum_9.png" alt="" width="1634" height="886"></a></strong></p>
+		</div>
+		<div class="divider"></div>
+
+		<div class="step" data-title="taniyalim">
+			<h2 class="text-big-2em" id="taniyalim"># WAMP Server'ı Tanıyalım</h2>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_0.png" class="link"><img class="aligncenter size-full wp-image-554" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_0.png" alt="" width="533" height="275"></a></p>
+			<p>WAMP Server kurulum esnasında seçtiğiniz dizine <strong>www</strong> isimli bir klasör oluşturur. Bu dizine gittiğinizde tarayıcınıza <a href="http://localhost">http://localhost</a> yazdığınızda görüntülenen sayfanın dosyalarına ulaşmış olursunuz. Bu da; bundan sonra yapacağımız web sitelerini bu klasörün altında toplamamız gerekmekte demektir. Hemen bir deneme.php dosyası oluşturun ve web tarayıcınıza <a href="http://localhost/deneme.php">http://localhost/deneme.php</a> yazıp sonucu görüntüleyin.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><strong>&nbsp;<a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_1.png" class="link"><img class="aligncenter size-full wp-image-555" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_1.png" alt="" width="284" height="138"></a></strong></p>
+			<p>WAMP Server’ı başlattıktan sonra simgesi sağ aşağı tarafta görünmeye başlayacaktır. Servislerin hazırlanma sürecinde bu simge kırmızı görüntülenir. Servisler doğru şekilde hazırlanır ve kullanıma hazır hale gelirse yeşil hale gelecektir.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_2.png" class="link"><img class="aligncenter size-full wp-image-556" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_2.png" alt="" width="283" height="215"></a></p>
+			<p>Simgeye sağ tıkladığımızda WAMP Server ayarlarını yapabildiğimiz pencere açılacaktır. Bu penceredeki seçeneklerden <strong>dil ayarı</strong>, <strong>WAMP Server’ı kapatma</strong> ve <strong>yenileme</strong> gibi işlemleri tek tıklama ile yapabileceğiniz gibi,</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_3.png" class="link"><img class="aligncenter size-full wp-image-557" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_3.png" alt="" width="530" height="421"></a></p>
+			<p>Wamp Settings (Ayarlar) menüsünden;<strong> Wamp Server’ın çalıştığı lokal IP ayarları, veri tabanı servislerinin seçimleri, lokal de çalışacak olan hosting servisinin link yapısı</strong> gibi ayarları yapabilirsiniz.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>Ayrıca Tools (Araçlar) menüsünden;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_4.png" class="link"><img class="aligncenter size-full wp-image-558" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_4.png" alt="" width="533" height="660"></a></p>
+			<p>Apache’nin, MySql’in ve MariaDB’nin dinledikleri portları değiştirebilirsiniz.</p>
+			<p><strong>Dikkat: Eğer bilgisayarınızda Skype yüklü ise Skype’ın kullandığı port ile Apache’nin kullandığı 80 portu çakışabilir. Bu durumda ikisinden birinde değişiklik yapmak zorunda kalabilirsiniz. Ama böyle bir durum söz konusu değilse bu ayarları –gerekmedikçe- değiştirmeyin. </strong></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_5.png" class="link"><img class="aligncenter size-full wp-image-559" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_5.png" alt="" width="279" height="359"></a></p>
+			<p>WAMP Server simgesine sol tuşla tıkladığımız zaman ise karşımıza s<strong>ervislerin detaylı ayarlarına ulaşabildiğimiz</strong> aynı zamanda <strong>çalışan servisleri durdurup</strong>, <strong>yeniden başlatabildiğimiz</strong> bir seçenekler penceresi çıkacaktır.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>Buradan her servis için ayrı ayrı ayarlamalar yapabiliriz.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><strong>Örneğin</strong>; www klasörü içine taşıdığımız web sitemizi görüntülemeye çalışırken hatalar alabiliriz. Bu hataların WAMP Server’da seçili olan PHP sürümü ile web sitemizin PHP sürümünün uyuşmazlığından kaynaklandığını varsayalım. Bu hatayı düzeltmek için yapmamız gereken şey çok basittir, WAMP simgesine sol tıklayıp PHP &gt; Version menüsünü takip etmek ve uygun olan PHP sürümünü seçmek. &nbsp;(Alttaki görseli inceleyin)</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_6.png" class="link"><img class="aligncenter size-full wp-image-560" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_kullanim_6.png" alt="" width="409" height="359"></a></p>
+		</div>
+		<div class="divider"></div>
+
+		<div class="step" data-title="hatalarvecozumleri">
+			<h2 class="text-big-2em" id="hatalarvecozumleri"># Kurarken Karşılaşılabilecek Hatalar ve Çözümleri</h2>
+			<p>&nbsp;</p>
+			<h3>php-win.exe – MSVCR110.dll Hatası ve Çözümü</h3>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_1.png" class="link"><img class="aligncenter size-full wp-image-561" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_1.png" alt="" width="407" height="148"></a></p>
+			<p><strong>Hata Adı: </strong></p>
+			<p>EN: php-win.exe System Error</p>
+			<p>TR: php-win.exe Sistem Hatası</p>
+			<p>&nbsp;</p>
+			<p><strong>Açıklama: </strong></p>
+			<p>EN: The program can’t start because MSVCR110.dll is missing from your computer.</p>
+			<p>TR: Bu program çalıştırılamaz çünkü bilgisayarınızda MSCVR110.dll dosyası bulunamadı.</p>
+			<p>&nbsp;</p>
+			<p><strong>Çözüm:</strong></p>
+			<p>Windows işletim sistemli sunucu veya bilgisayarlarda bazı programları ve sistemleri çalıştırabilmek için Windows’un şart koştuğu kütüphane dosyalarının yüklü ve güncel olması gerekmektedir.</p>
+			<p>Bu işlem için aşağıdaki adımları takip ederek gerekli dosyaya ulaşın ve yükleme işlemini yapın.</p>
+			<p>&nbsp;</p>
+			<p><strong>Adım 1</strong> – Wamp Server’ı Program Ekle/Kaldır’dan kaldırın.</p>
+			<p><strong>Adım 2 –</strong> Aşağıda belirttiğimiz dosyayı indirin, yükleyin ve bilgisayarınızı yeniden başlatın.</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_1-cozum_1.png" class="link"><img class="aligncenter size-full wp-image-562" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_1-cozum_1.png" alt="" width="821" height="270"></a></p>
+			<p>64bit için <a href="https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe">https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe</a> linkinden gerekli dosyayı indirebilirsiniz.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<hr>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3>httpd.exe – VCRUNTIME140.dll Hatası ve Çözümü</h3>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_2.png" class="link"><img class="aligncenter size-full wp-image-563" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_2.png" alt="" width="404" height="162"></a></p>
+			<p>&nbsp;</p>
+			<p><strong>Hata Adı: </strong></p>
+			<p>EN: httpd.exe System Error</p>
+			<p>TR: httpd.exe Sistem Hatası</p>
+			<p>&nbsp;</p>
+			<p><strong>Açıklama: </strong></p>
+			<p>EN: The program can’t start because VCRUNTIME140.dll is missing from your computer.</p>
+			<p>TR: Bu program çalıştırılamaz çünkü bilgisayarınızda VCRUNTIME140.dll dosyası bulunamadı.</p>
+			<p>&nbsp;</p>
+			<p><strong>Çözüm:</strong></p>
+			<p>Windows işletim sistemli sunucu veya bilgisayarlarda bazı programları ve sistemleri çalıştırabilmek için Windows’un şart koştuğu kütüphane dosyalarının yüklü ve güncel olması gerekmektedir.</p>
+			<p>&nbsp;</p>
+			<p>Bu işlem için aşağıdaki adımları takip ederek gerekli dosyaya ulaşın ve yükleme işlemini yapın.</p>
+			<p>&nbsp;</p>
+			<p><strong>Adım 1</strong> – Wamp Server’ı Program Ekle/Kaldır’dan kaldırın.</p>
+			<p>&nbsp;</p>
+			<p><strong>Adım 2 –</strong> Aşağıda belirttiğimiz dosyayı indirin, yükleyin ve bilgisayarınızı yeniden başlatın.</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_2-cozum_1.png" class="link"><img class="aligncenter size-full wp-image-564" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_2-cozum_1.png" alt="" width="795" height="268"></a></p>
+			<p>64bit için <a href="https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe">https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe</a> linkinden gerekli dosyayı indirebilirsiniz.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<hr>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3>mysqld.exe – MSVCR110.dll Hatası ve Çözümü</h3>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_3.png" class="link"><img class="aligncenter size-full wp-image-565" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_3.png" alt="" width="407" height="151"></a></p>
+			<p><strong>Hata Adı: </strong></p>
+			<p>EN: mysqld.exe System Error</p>
+			<p>TR: mysqld.exe Sistem Hatası</p>
+			<p>&nbsp;</p>
+			<p><strong>Açıklama: </strong></p>
+			<p>EN: The program can’t start because MSVCR110.dll is missing from your computer.</p>
+			<p>TR: Bu program çalıştırılamaz çünkü bilgisayarınızda MSCVR110.dll dosyası bulunamadı.</p>
+			<p>&nbsp;</p>
+			<p><strong>Çözüm:</strong></p>
+			<p>Windows işletim sistemli sunucu veya bilgisayarlarda bazı programları ve sistemleri çalıştırabilmek için Windows’un şart koştuğu kütüphane dosyalarının yüklü ve güncel olması gerekmektedir.</p>
+			<p>&nbsp;</p>
+			<p>Bu işlem için aşağıdaki adımları takip ederek gerekli dosyaya ulaşın ve yükleme işlemini yapın.</p>
+			<p>&nbsp;</p>
+			<p><strong>Adım 1</strong> – Wamp Server’ı Program Ekle/Kaldır’dan kaldırın.</p>
+			<p><strong>Adım 2 –</strong> Aşağıda belirttiğimiz dosyayı indirin, yükleyin ve bilgisayarınızı yeniden başlatın.</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_3-cozum_1.png" class="link"><img class="aligncenter size-full wp-image-566" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_3-cozum_1.png" alt="" width="812" height="264"></a></p>
+			<p>64bit için <a href="https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe">https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe</a> linkinden gerekli dosyayı indirebilirsiniz.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<hr>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3>Çalışan Servislerin Eksik Kalması yada Bütün Servislerin Çalışmaması (Turuncu Simge)</h3>
+			<p><strong>&nbsp;</strong></p>
+			<p><strong>&nbsp;</strong></p>
+			<p><strong>Açıklama:</strong></p>
+			<p>Eğer php-win.exe- MSVCR110.dll, httpd.exe - VCRUNTIME140.dll, mysqld.exe – MSVCR110.dll &nbsp;hatalarını aldıysanız ve anlatıldığı gibi çözüme ulaştıysanız büyük ihtimalle WAMP Server ikonunu turuncu şekilde görüyorsunuz. Bunun sebebi çalışması gereken servislerde eksiklik olmasıdır. PHP, Apache ve MySql servislerinin biri bile çalışmıyor olursa bu turuncu ikonu görmeye devam edersiniz.</p>
+			<p>&nbsp;</p>
+			<p>Servislerin çalışmama sebebi ise yükleme esnasında karşılaşılan hatalar sonucu doğru yüklenememesi yada hiç yüklenememesidir. Bu durumda Wamp Server Manager’dan ayarlarına gidip ilgili servisi yeniden yüklememiz gerekebilir.</p>
+			<p>&nbsp;</p>
+			<p>Aşağıdaki adımları takip ederek bu sorunları çözebilirsiniz.</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_4-cozum_1.png" class="link"><img class="aligncenter size-full wp-image-567" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_4-cozum_1.png" alt="" width="484" height="424"></a></p>
+			<ul>
+			<li><strong>Apache Servis Yükleme</strong></li>
+			</ul>
+			<p>&nbsp;</p>
+			<p>Wamp Server simgesine sol tıklayın ve (görseldeki gibi) Apache &gt; Services &gt; Install Service adımlarını takip edin.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_4-cozum_2.png" class="link"><img class="aligncenter size-full wp-image-568" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_hata_4-cozum_2.png" alt="" width="452" height="377"></a></p>
+			<ul>
+			<li><strong>MySql Servis Yükleme</strong></li>
+			</ul>
+			<p>&nbsp;</p>
+			<p>Wamp Server simgesine sol tıklayın ve (görseldeki gibi) MySql &gt; Services &gt; Install Service adımlarını takip edin.</p>
+		</div>
+		<div class="divider"></div>
+		
+		<div class="step" data-title="interneteacmak">
+			<h2 class="text-big-2em" id="interneteacmak"># İnternete Açmak (Online Hale Getirmek)</h2>
+			<p><span>Aşağıdaki adımları takip ederek sunucunuza yada bilgisayarınıza yüklediğiniz WAMP Server’ı internete açık hale getirebilir yani lokalde barındırdığınız web siteleri online’a açabilirsiniz.</span></p>
+			<p>&nbsp;</p>
+			<h3><span>Adım 1: Put Online’ı Menüye Eklemek</span></h3>
+			<p><span>WAMP Server Yöneticisine&nbsp; “put online” ikonunu getirmeniz gerekmektedir. Bunun için görseldeki adımları takip ediniz yada <strong>Wamp Server ikonuna sağ tıklayın -&gt;</strong> <strong>Wamp Settings -&gt; Menu item: Online / Offline</strong> seçeneğine tıklayın.</span></p>
+			<p><span><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_1.png" class="link"><img class="aligncenter size-full wp-image-569" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_1.png" alt="" width="467" height="428"></a></span></p>
+			<p><span>Bu işlemi yaptıktan sonra Wamp Server ikonununa sol tıkladığınızda en altta “Put Online” seçeneğinin gelmiş olduğunu göreceksiniz.</span></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3><span>Adım 2: Put Online İşlemini Başlatmak</span></h3>
+			<p><span>Şimdi menüye yeni gelmiş olan “<strong>Put Online</strong>” seçeneğine tıklayın. Konsole ekranı açılıp kapandıktan sonra Wamp Server servisleri yeniden başlatacaktır. Hiçbir sorunla karşılaşmazsanız Wamp Server Online servisi doğru çalışırsa ikonu değişecek ve görseldeki gibi kırmızı nokta içeren bir hal alacaktır.</span></p>
+			<p><span><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_2.png" class="link"><img class="aligncenter size-full wp-image-570" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_2.png" alt="" width="227" height="169"></a></span></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3><span>Adım 3: Kontrol Edelim</span></h3>
+			<p><span>Bu işlemleri yaptıktan sonra başka herhangi bir bilgisayarda web tarayıcınıza sunucunuzun yada bilgisayarınızın IP Adresini girin. (<a href="https://www.katoptrik.com/ip-adresim">IP Adresinizi öğrenmek için tıklayın</a>) Görseldeki gibi bir ekranla karşılaşıyorsanız doğru yolda ilerliyorsunuz demektir.</span></p>
+			<p>&nbsp;</p>
+			<p><span>Karşılaştığınız bu hata sunucuzun dinlediği 80 portunun dışarıdan gelen bağlantılara kapalı olduğu anlamına gelmektedir. Bunun birden fazla sebebi olabilir. En genel sebep sunucunuzdaki yada bilgisayarınızda ki Firewall ve Antivirüs yazılımlarının gelen istekleri engelliyor olmasıdır.</span></p>
+			<p><span><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_3.png" class="link"><img class="aligncenter size-full wp-image-571" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_3.png" alt="" width="628" height="282"></a></span></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3><span>Adım 4: Windows Firewall’u Ayarlama: </span></h3>
+			<p><span>Kontrol Paneline gidin - &gt; Windows Firewall menüsünü bulun ve tıklayın -&gt; Sol Menüden Windows Firewall Kapat / Aç ‘ı tıklayın -&gt;Açılacak ekrandan <strong>Public network location settings</strong> ayarını kapalı hale getirin.</span></p>
+			<p><span><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_4.png" class="link"><img class="aligncenter size-full wp-image-572" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_4.png" alt="" width="842" height="584"></a></span></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3><span>Adım 5: httpd-vhost.conf dosyasını düzenleme</span></h3>
+			<p><span><strong>&nbsp;</strong></span></p>
+			<p><span>Eğer buraya kadar adımları doğru şekilde uyguladıysanız Wamp Server’ı online hale getirmek için yapmamız gereken son bir adım kalmış oluyor. Bu adımda Apache servisinin dinlediği 80 Portunun dışardan gelen bağlantılara açılma işlemini gerçekleştireceğiz.</span></p>
+			<p>&nbsp;</p>
+			<p><span>Bunun için şu yolu takip ederek gerekli dosyaya ulaşmamız gerekiyor;</span></p>
+			<p><span><strong>wamp64\bin\apache\apache{version}\conf\extra\httpd-vhosts.conf</strong></span></p>
+			<p><span><strong>&nbsp;<a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_5.png" class="link"><img class="aligncenter size-full wp-image-573" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_5.png" alt="" width="816" height="441"></a></strong></span></p>
+			<p><span>Dosyayı bulduktan sonra herhangi bir editör ile düzenlemek için açın. Karşınıza gelen kodlar aşağıdaki gibi olacaktır;</span></p>
+			<p>&nbsp;</p>
+			<pre><code class="hljs apache"><span><span class="hljs-comment"># Virtual Hosts</span>
+
+			<span class="hljs-comment">#</span>
+
+			<span class="hljs-section">&lt;VirtualHost *:80&gt;</span>
+
+			&nbsp; <span class="hljs-attribute"><span class="hljs-nomarkup">ServerName</span></span> localhost
+
+			&nbsp; <span class="hljs-attribute">ServerAlias</span> localhost
+
+			&nbsp; <span class="hljs-attribute"><span class="hljs-nomarkup">DocumentRoot</span></span> <span class="hljs-string">"${INSTALL_DIR}/www"</span>
+
+			&nbsp; <span class="hljs-section">&lt;Directory "${INSTALL_DIR}/www/"&gt;</span>
+
+			&nbsp;&nbsp;&nbsp; <span class="hljs-attribute"><span class="hljs-nomarkup">Options</span></span> +Indexes +Includes +FollowSymLinks +MultiViews
+
+			&nbsp;&nbsp;&nbsp; <span class="hljs-attribute">AllowOverride</span> <span class="hljs-literal">All</span>
+
+			&nbsp;&nbsp;&nbsp; <strong><span class="hljs-attribute">Require</span> local</strong>
+
+			&nbsp; <span class="hljs-section">&lt;/Directory&gt;</span>
+
+			<span class="hljs-section">&lt;/VirtualHost&gt;</span></span></code></pre>
+			<p>&nbsp;</p>
+			<p><span>Değiştirmemiz gereken satır kırmızı ve kalın harfler ile işaretli satırdır. Burada ki “<strong>local</strong>” değerini “<strong>all granted</strong>” ile değiştirip dosyayı kaydediyoruz.</span></p>
+			<p>&nbsp;</p>
+			<pre><code class="hljs apache"><span><span class="hljs-comment"># Virtual Hosts</span>
+
+			<span class="hljs-comment">#</span>
+
+			<span class="hljs-section">&lt;VirtualHost *:80&gt;</span>
+
+			&nbsp; <span class="hljs-attribute"><span class="hljs-nomarkup">ServerName</span></span> localhost
+
+			&nbsp; <span class="hljs-attribute">ServerAlias</span> localhost
+
+			&nbsp; <span class="hljs-attribute"><span class="hljs-nomarkup">DocumentRoot</span></span> <span class="hljs-string">"${INSTALL_DIR}/www"</span>
+
+			&nbsp; <span class="hljs-section">&lt;Directory "${INSTALL_DIR}/www/"&gt;</span>
+
+			&nbsp;&nbsp;&nbsp; <span class="hljs-attribute"><span class="hljs-nomarkup">Options</span></span> +Indexes +Includes +FollowSymLinks +MultiViews
+
+			&nbsp;&nbsp;&nbsp; <span class="hljs-attribute">AllowOverride</span> <span class="hljs-literal">All</span>
+
+			&nbsp;&nbsp;&nbsp; <strong><span class="hljs-attribute">Require</span> <span class="hljs-literal">all</span> granted&nbsp; &lt;-----</strong>
+
+			&nbsp; <span class="hljs-section">&lt;/Directory&gt;</span>
+
+			<span class="hljs-section">&lt;/VirtualHost&gt;</span></span></code></pre>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3><span>Adım 6: Wamp Server’ı Yeniden Başlatın</span></h3>
+			<p><span>Wamp Server ikonuna sol tıklayın ve <strong>Restart All Services</strong> seçeneğine tıklayın.</span></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h3><span>Adım 7: Kontrol Edelim</span></h3>
+			<p><span>Wamp Server ikonu tekrar kırmızı nokta içeren hale geldikten sonra IP Adresinizi başka bir bilgisayarda web tarayıcıya girin ve sonucu kontrol edin.</span></p>
+			<p><span><a href="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_6.png" class="link"><img class="aligncenter size-full wp-image-574" src="http://kb.makdos.com/wp-content/uploads/2018/01/wamp_put_online_6.png" alt="" width="1208" height="539"></a></span></p>
+			<p><span>Localhost’de ki index.php içeriğini görüntüleyebiliyorsanız. İşlem başarıyla tamamlandı demektir.</span></p>
+		</div>
+	</div>
+
+	<div class="buttons">
+		<button class="btn btn-prev">< Önceki</button>
+		<button class="btn btn-next">Sonraki ></button>
+	</div>
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/highlighterjs/highlight.min.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
